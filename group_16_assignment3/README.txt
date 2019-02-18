@@ -6,7 +6,7 @@
 
 3. Open the a3_novelvisualization directory, and make sure that the desired .ttf or .otf font file (Old Press.ttf), desired background image (Paper.jpg), and uniquewords.txt are there along with a3_novelvisualization.pde.
 
-4. Run a3_novelvisualization.pde and generate the word cloud. 
+4. Run a3_novelvisualization.pde and generate the word cloud. Press the spacebar to generate a new word cloud.
 
 5. Open the a3_wordfrequency directory, and make sure that wordfrequency.txt is there along with a3_wordfrequency.pde.
 
