@@ -13,6 +13,7 @@ def uniquewords(allwords):
 def wordfrequency(allwords):
     out_file3=open('./wordfrequency.txt',"w",encoding="utf8")
     word_freq={}
+    word_freq_copy={}
     for word in allwords:
         if word in word_dict.keys():
             word_dict[word]+=1
@@ -24,9 +25,11 @@ def wordfrequency(allwords):
             word_freq[frequency]+=1
         else:
             word_freq[frequency]=1
-    for freq in word_freq.keys():
-        out_file3.write(str(freq)+': '+str(word_freq[freq])+'\n')
-    
+    word_freq_copy=word_freq
+    for i in range(len(word_freq_copy.keys())):
+        minfreq=min(word_freq_copy.keys()) 
+        out_file3.write(str(minfreq)+': '+str(word_freq_copy[minfreq])+'\n')
+        del word_freq_copy[minfreq]
             
     out_file3.close()
             
